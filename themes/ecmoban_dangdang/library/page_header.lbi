@@ -132,9 +132,6 @@ catch (e) {
           <div class="search_tig"> 热搜：  {foreach from=$searchkeywords item=val} <a href="search.php?keywords={$val|escape:url}" target="_blank" class="track">{$val}</a> {/foreach} </div>
           {/if} </div>
         <div class="top_shopCart clearfix"  >
-          <div class="qrcode" id="headererweima"> 
-            <p><a href="#" class="qrcode_img" ><img src="../images/erweima.png"></a></p>
-          </div>
         </div>
       </div>
     </div>

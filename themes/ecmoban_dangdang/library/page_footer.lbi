@@ -39,8 +39,8 @@
     <!-- {/if} -->
 
    <div class="footer_copyright"><span>
-     {$copyright}<br />
-     <!-- {if $shop_address} --> 
+     <!--  {$copyright}<br />  -->
+     <!-- {if $shop_address} -->
      {$shop_address} <br /> 
      <!-- {/if} --> 
       <!-- {if $shop_postcode} --> 
@@ -83,7 +83,7 @@
       <!-- 结束ICP 证书{/if} --> 
       </span>
     </div>
-    <div align="center"><a href=" http://www.ecmoban.com" target="_blank"><img src="images/ecmoban.gif" alt="ECShop模板" /></a></div>
+
     
     <div class="footer_icon footer_icon2">
 				<div class="validator"><a href="#" target="_blank" class="footer_img"><img src="../images/validate.gif"></a></div>
