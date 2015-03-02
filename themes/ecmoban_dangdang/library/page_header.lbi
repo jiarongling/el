@@ -90,7 +90,7 @@ catch (e) {
 </div>
 <div  class="clearfix">
   <div class="block header">
-    <div class="top"> <a href="../index.php" class="logo"><img src="../images/logo.gif"> </a>
+    <div class="top" > <a href="../index.php" class="logo"><img style="width:362px;height:92px;" src="../images/logo.png"> </a>
       <div class="head_r">
         <div class="top_search"> 
           <script type="text/javascript">
