@@ -342,6 +342,18 @@ region.isAdmin=true;
   </tr>
   {/if}
   <tr>
+    <th>{$lang.label_tb_order_id}</th>
+    <td><input name="tb_order_id" type="text" id="tb_order_id" value="{$order.tb_order_id}" size="40" /></td>
+  </tr>
+  <tr>
+    <th>{$lang.label_tb_delivery_id}</th>
+    <td><input name="tb_delivery_id" type="text" id="tb_delivery_id" value="{$order.tb_delivery_id}" size="40" /></td>
+  </tr>
+  <tr>
+    <th>{$lang.label_tb_memo}</th>
+    <td><textarea name="tb_memo" cols="60" rows="3">{$order.tb_memo}</textarea></td>
+  </tr>
+  <tr>
     <th>{$lang.label_inv_type}</th>
     <td><input name="inv_type" type="text" id="inv_type" value="{$order.inv_type}" size="40" /></td>
   </tr>

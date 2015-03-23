@@ -401,4 +401,9 @@ $_LANG['label_return_time'] = '退货时间';
 $_LANG['tips_back_del'] = '退货单删除成功！';
 
 $_LANG['goods_num_err'] = '库存不足，请重新选择！';
+
+$_LANG['label_tb_order_id'] = '淘宝订单号:';
+$_LANG['label_tb_delivery_id'] = '淘宝发货单号:';
+$_LANG['label_tb_memo'] = '淘宝备注:';
+
 ?>

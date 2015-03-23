@@ -1771,6 +1771,9 @@ elseif ($_REQUEST['act'] == 'step_post')
         $order['how_oos']       = $_POST['how_oos'];
         $order['postscript']    = $_POST['postscript'];
         $order['to_buyer']      = $_POST['to_buyer'];
+        $order['tb_delivery_id']      = $_POST['tb_delivery_id'];
+        $order['tb_order_id']      = $_POST['tb_order_id'];
+        $order['tb_memo']      = $_POST['tb_memo'];
         update_order($order_id, $order);
         update_order_amount($order_id);
 
