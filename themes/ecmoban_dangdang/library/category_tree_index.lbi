@@ -21,7 +21,7 @@
     
     
   <div id="category_tree">
-  <div class="tit"> </div>
+  <div class="tit">全部商品详情分类</div>
   <dl class="clearfix" >
      <!--{foreach from=$categories item=cat name=no}-->
         <div  class="dt" onMouseOver="sw_nav2({$smarty.foreach.no.iteration},1);" onMouseOut="sw_nav2({$smarty.foreach.no.iteration},0);" 
@@ -58,4 +58,4 @@
 <!--{/foreach}--> 
 </dl>
 </div>
-<div class="blank"></div>
+

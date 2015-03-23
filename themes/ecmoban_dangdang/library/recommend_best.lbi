@@ -1,7 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- {if $best_goods} -->
 <!-- {if $cat_rec_sign neq 1} -->
-<div class="xm-box">
+<div class="xm-box show_best">
   <h4 class="title"><span>精品推荐</span> <a class="more" href="../search.php?intro=best">更多</a></h4>
   <div id="show_best_area" class="clearfix"> 
     <!-- {/if} --> 

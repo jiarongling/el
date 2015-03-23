@@ -12,6 +12,7 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,index.js'}
@@ -50,13 +51,13 @@
     <!--AD end-->
   </div>
 
-<div class="f_l" style=" width:772px;"> 
+<div class="f_l" style=" width:640px;"> 
 <!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->
  
 
  
 </div>
-<div  class="f_r" style="width:235px;">
+<div  class="f_r" style="width:343px;">
 <!--
 <div class="fr da0x70"> 
 <!-- TemplateBeginEditable name="首页轮播右边区域广告" -->
@@ -123,11 +124,15 @@
        </div>
  </div>
  
-<div class="blank"></div>
+<!--<div class="blank"></div>-->
 <!-- {/if} -->
  <!-- #EndLibraryItem -->
 <!-- TemplateEndEditable -->  
-<div class="blank"></div> 
+<!--<div class="blank"></div>--> 
+
+<div class="crossADV" id="crossADV"></div>
+
+
   <div class="goodsBox_1">
   <!-- TemplateBeginEditable name="首页右侧区域" -->
 <!-- TemplateEndEditable -->
