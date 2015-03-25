@@ -51,12 +51,12 @@
      <form name="formEdit" action="user.php" method="post" onSubmit="return userEdit()">
       <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
                 <tr>
-                  <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.birthday}： </td>
-                  <td width="72%" align="left" bgcolor="#FFFFFF"> {html_select_date field_order=YMD prefix=birthday start_year=-60 end_year=+1 display_days=true month_format=%m day_value_format=%02d time=$profile.birthday} </td>
+                  <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.birthday}： </td>
+                  <td width="72%" align="right" bgcolor="#FFFFFF"> {html_select_date field_order=YMD prefix=birthday start_year=-60 end_year=+1 display_days=true month_format=%m day_value_format=%02d time=$profile.birthday} </td>
                 </tr>
                 <tr>
-                  <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.sex}： </td>
-                  <td width="72%" align="left" bgcolor="#FFFFFF"><input type="radio" name="sex" value="0" {if $profile.sex==0}checked="checked"{/if} />
+                  <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.sex}： </td>
+                  <td width="72%" align="right" bgcolor="#FFFFFF"><input type="radio" name="sex" value="0" {if $profile.sex==0}checked="checked"{/if} />
                     {$lang.secrecy}&nbsp;&nbsp;
                     <input type="radio" name="sex" value="1" {if $profile.sex==1}checked="checked"{/if} />
                     {$lang.male}&nbsp;&nbsp;
@@ -64,14 +64,14 @@
                   {$lang.female}&nbsp;&nbsp; </td>
                 </tr>
                 <tr>
-                  <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.email}： </td>
-                  <td width="72%" align="left" bgcolor="#FFFFFF"><input name="email" type="text" value="{$profile.email}" size="25" class="inputBg" /><span style="color:#FF0000"> *</span></td>
+                  <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.email}： </td>
+                  <td width="72%" align="right" bgcolor="#FFFFFF"><input name="email" type="text" value="{$profile.email}" size="25" class="inputBg" /><span style="color:#FF0000"> *</span></td>
                 </tr>
         {foreach from=$extend_info_list item=field}
         <!-- {if $field.id eq 6} -->
         <tr>
-          <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.passwd_question}：</td>
-          <td width="72%" align="left" bgcolor="#FFFFFF">
+          <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.passwd_question}：</td>
+          <td width="72%" align="right" bgcolor="#FFFFFF">
           <select name='sel_question'>
           <option value='0'>{$lang.sel_question}</option>
           {html_options options=$passwd_questions selected=$profile.passwd_question}
@@ -79,15 +79,15 @@
           </td>
         </tr>
         <tr>
-       <td width="28%" align="right" bgcolor="#FFFFFF" <!-- {if $field.is_need} -->id="passwd_quesetion"<!--{/if}-->>{$lang.passwd_answer}：</td>
-          <td width="72%" align="left" bgcolor="#FFFFFF">
+       <td width="28%" align="left" bgcolor="#FFFFFF" <!-- {if $field.is_need} -->id="passwd_quesetion"<!--{/if}-->>{$lang.passwd_answer}：</td>
+          <td width="72%" align="right" bgcolor="#FFFFFF">
           <input name="passwd_answer" type="text" size="25" class="inputBg" maxlengt='20' value="{$profile.passwd_answer}"/><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!-- {/if} -->
           </td>
         </tr>
         <!-- {else} -->
         <tr>
-           <td width="28%" align="right" bgcolor="#FFFFFF" <!-- {if $field.is_need} -->id="extend_field{$field.id}i"<!--{/if}-->>{$field.reg_field_name}：</td>
-            <td width="72%" align="left" bgcolor="#FFFFFF">
+           <td width="28%" align="left" bgcolor="#FFFFFF" <!-- {if $field.is_need} -->id="extend_field{$field.id}i"<!--{/if}-->>{$field.reg_field_name}：</td>
+            <td width="72%" align="right" bgcolor="#FFFFFF">
             <input name="extend_field{$field.id}" type="text" class="inputBg" value="{$field.content}"/><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!-- {/if} -->
             </td>
         </tr>
@@ -103,16 +103,16 @@
      <form name="formPassword" action="user.php" method="post" onSubmit="return editPassword()" >
      <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
         <tr>
-          <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.old_password}：</td>
-          <td width="76%" align="left" bgcolor="#FFFFFF"><input name="old_password" type="password" size="25"  class="inputBg" /></td>
+          <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.old_password}：</td>
+          <td width="76%" align="right" bgcolor="#FFFFFF"><input name="old_password" type="password" size="25"  class="inputBg" /></td>
         </tr>
         <tr>
-          <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.new_password}：</td>
-          <td align="left" bgcolor="#FFFFFF"><input name="new_password" type="password" size="25"  class="inputBg" /></td>
+          <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.new_password}：</td>
+          <td align="right" bgcolor="#FFFFFF"><input name="new_password" type="password" size="25"  class="inputBg" /></td>
         </tr>
         <tr>
-          <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.confirm_password}：</td>
-          <td align="left" bgcolor="#FFFFFF"><input name="comfirm_password" type="password" size="25"  class="inputBg" /></td>
+          <td width="28%" align="left" bgcolor="#FFFFFF">{$lang.confirm_password}：</td>
+          <td align="right" bgcolor="#FFFFFF"><input name="comfirm_password" type="password" size="25"  class="inputBg" /></td>
         </tr>
         <tr>
           <td colspan="2" align="center" bgcolor="#FFFFFF"><input name="act" type="hidden" value="act_edit_password" />
@@ -623,13 +623,13 @@
         <form name="formSurplus" method="post" action="user.php" onSubmit="return submitSurplus()">
         <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
           <tr>
-            <td width="15%" bgcolor="#ffffff">{$lang.repay_money}:</td>
-            <td bgcolor="#ffffff" align="left"><input type="text" name="amount" value="{$order.amount|escape}" class="inputBg" size="30" />
+            <td width="15%" bgcolor="#ffffff" align="left">{$lang.repay_money}:</td>
+            <td bgcolor="#ffffff" align="right"><input type="text" name="amount" value="{$order.amount|escape}" class="inputBg" size="30" />
             </td>
           </tr>
           <tr>
-            <td bgcolor="#ffffff">{$lang.process_notic}:</td>
-            <td bgcolor="#ffffff" align="left"><textarea name="user_note" cols="55" rows="6" style="border:1px solid #ccc;">{$order.user_note|escape}</textarea></td>
+            <td bgcolor="#ffffff" align="left">{$lang.process_notic}:</td>
+            <td bgcolor="#ffffff" align="right"><textarea name="user_note" cols="55" rows="6" style="border:1px solid #ccc;">{$order.user_note|escape}</textarea></td>
           </tr>
           <tr>
             <td bgcolor="#ffffff" colspan="2" align="center">
@@ -646,12 +646,12 @@
         <form name="formSurplus" method="post" action="user.php" onSubmit="return submitSurplus()">
         <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
             <tr>
-              <td width="15%" bgcolor="#ffffff">{$lang.deposit_money}:</td>
-              <td align="left" bgcolor="#ffffff"><input type="text" name="amount"  class="inputBg" value="{$order.amount|escape}" size="30" /></td>
+              <td align="left" width="15%" bgcolor="#ffffff">{$lang.deposit_money}:</td>
+              <td align="right" bgcolor="#ffffff"><input type="text" name="amount"  class="inputBg" value="{$order.amount|escape}" size="30" /></td>
             </tr>
             <tr>
-              <td bgcolor="#ffffff">{$lang.process_notic}:</td>
-              <td align="left" bgcolor="#ffffff"><textarea name="user_note" cols="55" rows="6" style="border:1px solid #ccc;">{$order.user_note|escape}</textarea></td>
+              <td align="left" bgcolor="#ffffff">{$lang.process_notic}:</td>
+              <td align="right" bgcolor="#ffffff"><textarea name="user_note" cols="55" rows="6" style="border:1px solid #ccc;">{$order.user_note|escape}</textarea></td>
             </tr>
           </table>
           <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
@@ -785,8 +785,8 @@
             <form action="user.php" method="post" name="theForm" onsubmit="return checkConsignee(this)">
               <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
                 <tr>
-                  <td align="right" bgcolor="#ffffff">{$lang.country_province}：</td>
-                  <td colspan="3" align="left" bgcolor="#ffffff"><select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
+                  <td align="left" bgcolor="#ffffff">{$lang.country_province}：</td>
+                  <td colspan="3" align="right" bgcolor="#ffffff"><select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
                       <option value="0">{$lang.please_select}{$name_of_region[0]}</option>
                       <!-- {foreach from=$country_list item=country} -->
                       <option value="{$country.region_id}" {if $consignee.country eq $country.region_id}selected{/if}>{$country.region_name}</option>
@@ -813,32 +813,32 @@
                   {$lang.require_field} </td>
                 </tr>
                 <tr>
-                  <td align="right" bgcolor="#ffffff">{$lang.consignee_name}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="consignee" type="text" class="inputBg" id="consignee_{$sn}" value="{$consignee.consignee|escape}" />
+                  <td align="left" bgcolor="#ffffff">{$lang.consignee_name}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="consignee" type="text" class="inputBg" id="consignee_{$sn}" value="{$consignee.consignee|escape}" />
                   {$lang.require_field} </td>
-                  <td align="right" bgcolor="#ffffff">{$lang.email_address}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="email" type="text" class="inputBg" id="email_{$sn}" value="{$consignee.email|escape}" />
+                  <td align="left" bgcolor="#ffffff">{$lang.email_address}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="email" type="text" class="inputBg" id="email_{$sn}" value="{$consignee.email|escape}" />
                   {$lang.require_field}</td>
                 </tr>
                 <tr>
-                  <td align="right" bgcolor="#ffffff">{$lang.detailed_address}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="address" type="text" class="inputBg" id="address_{$sn}" value="{$consignee.address|escape}" />
+                  <td align="left" bgcolor="#ffffff">{$lang.detailed_address}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="address" type="text" class="inputBg" id="address_{$sn}" value="{$consignee.address|escape}" />
                   {$lang.require_field}</td>
-                  <td align="right" bgcolor="#ffffff">{$lang.postalcode}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="zipcode" type="text" class="inputBg" id="zipcode_{$sn}" value="{$consignee.zipcode|escape}" /></td>
+                  <td align="left" bgcolor="#ffffff">{$lang.postalcode}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="zipcode" type="text" class="inputBg" id="zipcode_{$sn}" value="{$consignee.zipcode|escape}" /></td>
                 </tr>
                 <tr>
-                  <td align="right" bgcolor="#ffffff">{$lang.phone}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="tel" type="text" class="inputBg" id="tel_{$sn}" value="{$consignee.tel|escape}" />
+                  <td align="left" bgcolor="#ffffff">{$lang.phone}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="tel" type="text" class="inputBg" id="tel_{$sn}" value="{$consignee.tel|escape}" />
                   {$lang.require_field}</td>
-                  <td align="right" bgcolor="#ffffff">{$lang.backup_phone}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="mobile" type="text" class="inputBg" id="mobile_{$sn}" value="{$consignee.mobile|escape}" /></td>
+                  <td align="left" bgcolor="#ffffff">{$lang.backup_phone}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="mobile" type="text" class="inputBg" id="mobile_{$sn}" value="{$consignee.mobile|escape}" /></td>
                 </tr>
                 <tr>
-                  <td align="right" bgcolor="#ffffff">{$lang.sign_building}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="sign_building" type="text" class="inputBg" id="sign_building_{$sn}" value="{$consignee.sign_building|escape}" /></td>
-                  <td align="right" bgcolor="#ffffff">{$lang.deliver_goods_time}：</td>
-                  <td align="left" bgcolor="#ffffff"><input name="best_time" type="text"  class="inputBg" id="best_time_{$sn}" value="{$consignee.best_time|escape}" /></td>
+                  <td align="left" bgcolor="#ffffff">{$lang.sign_building}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="sign_building" type="text" class="inputBg" id="sign_building_{$sn}" value="{$consignee.sign_building|escape}" /></td>
+                  <td align="left" bgcolor="#ffffff">{$lang.deliver_goods_time}：</td>
+                  <td align="right" bgcolor="#ffffff"><input name="best_time" type="text"  class="inputBg" id="best_time_{$sn}" value="{$consignee.best_time|escape}" /></td>
                 </tr>
                 <tr>
                   <td align="right" bgcolor="#ffffff">&nbsp;</td>

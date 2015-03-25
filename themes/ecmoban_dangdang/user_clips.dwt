@@ -119,7 +119,7 @@
                     </tr>
                     {else}
                     <tr>
-                      <td align="right">{$lang.message_type}：</td>
+                      <td align="left">{$lang.message_type}：</td>
                       <td><input name="msg_type" type="radio" value="0" checked="checked" />
                         {$lang.type[0]}
                         <input type="radio" name="msg_type" value="1" />
@@ -133,15 +133,15 @@
                     </tr>
                     {/if}
                     <tr>
-                      <td align="right">{$lang.message_title}：</td>
+                      <td align="left">{$lang.message_title}：</td>
                       <td><input name="msg_title" type="text" size="30" class="inputBg" /></td>
                     </tr>
                     <tr>
-                      <td align="right" valign="top">{$lang.message_content}：</td>
+                      <td align="left" valign="top">{$lang.message_content}：</td>
                       <td><textarea name="msg_content" cols="50" rows="4" wrap="virtual" class="B_blue"></textarea></td>
                     </tr>
                     <tr>
-                      <td align="right">{$lang.upload_img}：</td>
+                      <td align="left">{$lang.upload_img}：</td>
                       <td><input type="file" name="message_img"  size="45"  class="inputBg" /></td>
                     </tr>
                     <tr>
@@ -238,7 +238,7 @@
      <form name="theForm" method="post" action="">
      <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
     <tr>
-      <td align="right" bgcolor="#ffffff">{$lang.label_need_image}</td>
+      <td align="left" bgcolor="#ffffff">{$lang.label_need_image}</td>
       <td bgcolor="#ffffff">
         <select name="need_image" id="need_image" class="inputBg">
           <option value="true" selected>{$lang.need}</option>
@@ -247,22 +247,22 @@
       </td>
     </tr>
     <tr>
-      <td align="right" bgcolor="#ffffff">{$lang.label_goods_num}</td>
+      <td align="left" bgcolor="#ffffff">{$lang.label_goods_num}</td>
       <td bgcolor="#ffffff"><input name="goods_num" type="text" id="goods_num" value="6" class="inputBg" /></td>
     </tr>
     <tr>
-      <td align="right" bgcolor="#ffffff">{$lang.label_arrange}</td>
+      <td align="left" bgcolor="#ffffff">{$lang.label_arrange}</td>
       <td bgcolor="#ffffff"><select name="arrange" id="arrange" class="inputBg">
         <option value="h" selected>{$lang.horizontal}</option>
         <option value="v">{$lang.verticle}</option>
       </select></td>
     </tr>
     <tr>
-      <td align="right" bgcolor="#ffffff">{$lang.label_rows_num}</td>
+      <td align="left" bgcolor="#ffffff">{$lang.label_rows_num}</td>
       <td bgcolor="#ffffff"><input name="rows_num" type="text" id="rows_num" value="1" class="inputBg" /></td>
     </tr>
     <tr>
-      <td align="right" bgcolor="#ffffff">{$lang.label_charset}</td>
+      <td align="left" bgcolor="#ffffff">{$lang.label_charset}</td>
       <td bgcolor="#ffffff"><select name="charset" id="charset">
         {html_options options=$lang_list}
       </select></td>

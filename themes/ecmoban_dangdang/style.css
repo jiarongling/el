@@ -2557,6 +2557,7 @@ body{direction:rtl; background-color:#f3f3f3;}
 .xm-box .pic {margin-bottom:25px; width:220px;}
 .xm-box .pic .img {width:220px; height:220px;}
 .xm-box .pic .name {width:220px;}
+
 /*尾部 footer*/
 #footer {border-top:1px solid #e6e6e6;}
 .footer {border-top:1px solid #fff; background-color:#e6e6e6; margin-top:0px;}
@@ -2573,3 +2574,23 @@ body{direction:rtl; background-color:#f3f3f3;}
 .public_footer_new .fore6 .f_title {background-position:110px -200px;}
 .footer_nav_box {border-top:0; padding:17px 0 0;}
 .footer_nav_box a {margin:0 12px;}
+
+/*产品列表*/
+#cate .f_l {float:right;}
+.category_tree .title {background-color:#91b257;}
+.screeBox span {background-color:#91b257;}
+h3 span {float:right; direction:ltr;}
+.box .f_r {float:left; margin-top:0px;}
+
+/*产品详情*/
+#goodsInfo .imgInfo {float:right; padding-right:0; padding-left:10px;}
+#goodsInfo h1,.goodsItem p,.comments li {text-align:right;}
+#goodsInfo .textInfo .ul2 li,#goodsInfo .textInfo ul li dd,.goodsItem,.shop_s,.box .f_r {float:right;}
+.history h2 {float:right; margin-right:0; margin-left:5px;}
+.boxCenterList li.goodsimg {float:right; margin:0 0 0 10px;}
+
+/*报价单*/
+h6 span {float:right;}
+
+/*用户中心*/
+h5 span{float:right;}
