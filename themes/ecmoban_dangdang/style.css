@@ -2577,10 +2577,12 @@ body{direction:rtl; background-color:#f3f3f3;}
 
 /*产品列表*/
 #cate .f_l {float:right;}
-.category_tree .title {background-color:#91b257;}
+.category_tree .title {background-color:#91b257; padding-left:0; padding-right:10px;}
 .screeBox span {background-color:#91b257;}
 h3 span {float:right; direction:ltr;}
 .box .f_r {float:left; margin-top:0px;}
+.AreaL {float:right;}
+.AreaR {float:left;}
 
 /*产品详情*/
 #goodsInfo .imgInfo {float:right; padding-right:0; padding-left:10px;}
@@ -2589,8 +2591,18 @@ h3 span {float:right; direction:ltr;}
 .history h2 {float:right; margin-right:0; margin-left:5px;}
 .boxCenterList li.goodsimg {float:right; margin:0 0 0 10px;}
 
+/*注册*/
+.usBox .f_l {float:right;}
+.usBox .usTxt {float:left;}
+.login_tab ul {padding-left:0; padding-right:70px;}
+.login_tab ul li {float:right; margin-left:6px; margin-right:0;}
+
 /*报价单*/
 h6 span {float:right;}
 
+/*选购中心*/
+.box .f_r {float:left;}
+
 /*用户中心*/
 h5 span{float:right;}
+.box_1 .userCenterBox .userMenu a {padding-right:27px;}

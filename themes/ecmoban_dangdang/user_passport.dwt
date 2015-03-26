@@ -32,8 +32,8 @@
    <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
         <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5">
           <tr>
-            <td width="35%" align="left">{$lang.label_username}</td>
-            <td width="55%" align="right"><input name="username" type="text" size="25" class="inputBg" /></td>
+            <td width="30%" align="left">{$lang.label_username}</td>
+            <td width="60%" align="right"><input name="username" type="text" size="25" class="inputBg" /></td>
           </tr>
           <tr>
             <td align="left">{$lang.label_password}</td>
@@ -92,8 +92,8 @@
     <form action="user.php" method="post" name="formUser" onsubmit="return register();">
       <table width="100%"  border="0" align="right" cellpadding="5" cellspacing="3">
         <tr>
-          <td width="35%" align="left">{$lang.label_username}</td>
-          <td width="55%" align="right">
+          <td width="30%" align="left">{$lang.label_username}</td>
+          <td width="60%" align="right">
           <input name="username" type="text" size="25" id="username" onblur="is_registered(this.value);" class="inputBg"/>
             <span id="username_notice" style="color:#FF0000"> *</span>
           </td>
